@@ -1,0 +1,336 @@
+<ui version="4.0" >
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>848</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget" >
+   <layout class="QHBoxLayout" name="horizontalLayout" >
+    <item>
+     <widget class="QGraphicsView" name="graphicsView" >
+      <property name="renderHints" >
+       <set>QPainter::Antialiasing|QPainter::TextAntialiasing</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" native="1" name="widget" >
+      <layout class="QVBoxLayout" name="verticalLayout_4" >
+       <item>
+        <widget class="QGroupBox" name="groupBox" >
+         <property name="title" >
+          <string>Font</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout" >
+          <item>
+           <layout class="QFormLayout" name="formLayout" >
+            <property name="fieldGrowthPolicy" >
+             <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+            </property>
+            <item row="0" column="0" >
+             <widget class="QLabel" name="label" >
+              <property name="text" >
+               <string>Family</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1" >
+             <widget class="QFontComboBox" name="fontFamilyComboBox" >
+              <property name="fontFilters" >
+               <set>QFontComboBox::ScalableFonts</set>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" >
+             <widget class="QLabel" name="label_2" >
+              <property name="text" >
+               <string>Point Size</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1" >
+             <widget class="QComboBox" name="fontSizeComboBox" >
+              <property name="currentIndex" >
+               <number>4</number>
+              </property>
+              <item>
+               <property name="text" >
+                <string>2</string>
+               </property>
+              </item>
+              <item>
+               <property name="text" >
+                <string>4</string>
+               </property>
+              </item>
+              <item>
+               <property name="text" >
+                <string>6</string>
+               </property>
+              </item>
+              <item>
+               <property name="text" >
+                <string>8</string>
+               </property>
+              </item>
+              <item>
+               <property name="text" >
+                <string>10</string>
+               </property>
+              </item>
+              <item>
+               <property name="text" >
+                <string>12</string>
+               </property>
+              </item>
+              <item>
+               <property name="text" >
+                <string>14</string>
+               </property>
+              </item>
+              <item>
+               <property name="text" >
+                <string>16</string>
+               </property>
+              </item>
+              <item>
+               <property name="text" >
+                <string>18</string>
+               </property>
+              </item>
+              <item>
+               <property name="text" >
+                <string>20</string>
+               </property>
+              </item>
+              <item>
+               <property name="text" >
+                <string>22</string>
+               </property>
+              </item>
+              <item>
+               <property name="text" >
+                <string>24</string>
+               </property>
+              </item>
+              <item>
+               <property name="text" >
+                <string>26</string>
+               </property>
+              </item>
+              <item>
+               <property name="text" >
+                <string>28</string>
+               </property>
+              </item>
+              <item>
+               <property name="text" >
+                <string>30</string>
+               </property>
+              </item>
+              <item>
+               <property name="text" >
+                <string>32</string>
+               </property>
+              </item>
+              <item>
+               <property name="text" >
+                <string>34</string>
+               </property>
+              </item>
+              <item>
+               <property name="text" >
+                <string>36</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="2" column="1" >
+             <widget class="QCheckBox" name="fontColorCheckBox" >
+              <property name="text" >
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0" >
+             <widget class="QLabel" name="label_3" >
+              <property name="text" >
+               <string>Color</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_2" >
+         <property name="title" >
+          <string>Bonds</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2" >
+          <item>
+           <layout class="QFormLayout" name="formLayout_2" >
+            <property name="fieldGrowthPolicy" >
+             <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+            </property>
+            <item row="2" column="0" >
+             <widget class="QLabel" name="label_4" >
+              <property name="text" >
+               <string>Hash/Wedge Width</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1" >
+             <widget class="QDoubleSpinBox" name="bondWidthSpinBox" >
+              <property name="suffix" >
+               <string>px.</string>
+              </property>
+              <property name="decimals" >
+               <number>1</number>
+              </property>
+              <property name="minimum" >
+               <double>1.000000000000000</double>
+              </property>
+              <property name="maximum" >
+               <double>20.000000000000000</double>
+              </property>
+              <property name="singleStep" >
+               <double>1.000000000000000</double>
+              </property>
+              <property name="value" >
+               <double>6.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1" >
+             <widget class="QDoubleSpinBox" name="bondSpacingSpinBox" >
+              <property name="suffix" >
+               <string>px.</string>
+              </property>
+              <property name="decimals" >
+               <number>1</number>
+              </property>
+              <property name="minimum" >
+               <double>2.000000000000000</double>
+              </property>
+              <property name="maximum" >
+               <double>20.000000000000000</double>
+              </property>
+              <property name="value" >
+               <double>5.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0" >
+             <widget class="QLabel" name="label_5" >
+              <property name="text" >
+               <string>Double Bond Spacing</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1" >
+             <widget class="QDoubleSpinBox" name="bondLengthSpinBox" >
+              <property name="suffix" >
+               <string>px.</string>
+              </property>
+              <property name="decimals" >
+               <number>0</number>
+              </property>
+              <property name="minimum" >
+               <double>20.000000000000000</double>
+              </property>
+              <property name="maximum" >
+               <double>200.000000000000000</double>
+              </property>
+              <property name="singleStep" >
+               <double>5.000000000000000</double>
+              </property>
+              <property name="value" >
+               <double>40.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0" >
+             <widget class="QLabel" name="label_6" >
+              <property name="text" >
+               <string>Bond Length</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" >
+             <widget class="QLabel" name="label_7" >
+              <property name="text" >
+               <string>Pen Width</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1" >
+             <widget class="QDoubleSpinBox" name="penWidthSpinBox" >
+              <property name="suffix" >
+               <string>px.</string>
+              </property>
+              <property name="decimals" >
+               <number>1</number>
+              </property>
+              <property name="minimum" >
+               <double>1.000000000000000</double>
+              </property>
+              <property name="maximum" >
+               <double>5.000000000000000</double>
+              </property>
+              <property name="singleStep" >
+               <double>0.500000000000000</double>
+              </property>
+              <property name="value" >
+               <double>2.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer" >
+         <property name="orientation" >
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0" >
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>848</width>
+     <height>29</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar" />
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
